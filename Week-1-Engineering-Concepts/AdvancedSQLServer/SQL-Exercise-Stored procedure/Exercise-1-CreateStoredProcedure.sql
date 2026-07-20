@@ -1,11 +1,3 @@
--- =============================================
--- Author      : Your Name
--- Module      : Advanced SQL Server
--- Exercise    : Create Stored Procedure
--- Objective   : Create stored procedures to
---               retrieve employees by department
---               and insert a new employee.
--- =============================================
 
 -- Stored Procedure to Retrieve Employees by Department
 
