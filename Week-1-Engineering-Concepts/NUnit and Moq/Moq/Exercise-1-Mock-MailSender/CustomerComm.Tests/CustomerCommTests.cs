@@ -20,12 +20,19 @@ public class CustomerCommTests
     [Test]
     public void SendMailToCustomer_ShouldReturnTrue_WhenMailIsSent()
     {
+        // Arrange
         _mockMailSender
             .Setup(x => x.SendMail(It.IsAny<string>(), It.IsAny<string>()))
             .Returns(true);
 
+        // Act
         bool result = _customerComm.SendMailToCustomer();
 
+        // Assert
         Assert.That(result, Is.True);
+
+        _mockMailSender.Verify(
+            x => x.SendMail(It.IsAny<string>(), It.IsAny<string>()),
+            Times.Once);
     }
 }
