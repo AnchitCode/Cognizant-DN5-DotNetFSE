@@ -1,0 +1,71 @@
+.page {
+  min-height: 100vh;
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: min(100%, 920px);
+  padding: 2rem;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.22);
+}
+
+.kicker {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  color: rgba(239, 244, 255, 0.72);
+}
+
+.card h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.description {
+  margin: 0.75rem 0 0;
+  color: rgba(239, 244, 255, 0.8);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.item {
+  padding: 1.2rem;
+  border-radius: 22px;
+  background: rgba(10, 17, 34, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.item p,
+.item span {
+  margin: 0;
+  color: rgba(239, 244, 255, 0.82);
+}
+
+.emerald {
+  color: #86efac;
+}
+
+.amber {
+  color: #fbbf24;
+}
+
+.rose {
+  color: #fda4af;
+}
